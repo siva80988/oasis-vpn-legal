@@ -1,1 +1,161 @@
-# oasis-vpn-legal
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oasis VPN - Privacy Policy & Terms</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background: #f5f7fa;
+      color: #222;
+    }
+
+    header {
+      background: #0d6efd;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      text-align: center;
+      margin: 10px 0;
+    }
+
+    nav button {
+      padding: 10px 20px;
+      margin: 5px;
+      border: none;
+      cursor: pointer;
+      background: #0d6efd;
+      color: white;
+      border-radius: 5px;
+    }
+
+    nav button:hover {
+      background: #084298;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    section {
+      display: none;
+    }
+
+    section.active {
+      display: block;
+    }
+
+    h2 {
+      color: #0d6efd;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Oasis VPN</h1>
+  <p>Privacy Policy & Terms of Service</p>
+</header>
+
+<nav>
+  <button onclick="showSection('privacy')">Privacy Policy</button>
+  <button onclick="showSection('terms')">Terms & Conditions</button>
+</nav>
+
+<div class="container">
+
+  <!-- Privacy Policy -->
+  <section id="privacy" class="active">
+    <h2>Privacy Policy</h2>
+    <p><strong>Last Updated:</strong> June 8, 2026</p>
+
+    <p>Oasis VPN is committed to protecting your privacy and ensuring a secure browsing experience.</p>
+
+    <h3>Information We Collect</h3>
+    <ul>
+      <li>Device information (model, OS version)</li>
+      <li>Anonymous app usage data</li>
+      <li>Crash logs for performance improvement</li>
+    </ul>
+
+    <h3>Information We Do Not Collect</h3>
+    <ul>
+      <li>Browsing history</li>
+      <li>VPN traffic content</li>
+      <li>Personal identity data</li>
+      <li>Messages or files</li>
+    </ul>
+
+    <h3>VPN Service</h3>
+    <p>We use Android VPNService API only when the user activates the VPN. We do not log or monitor user activity.</p>
+
+    <h3>Third-Party Services</h3>
+    <p>We may use Google Play Services, Firebase Analytics, and Crashlytics for performance and crash reporting.</p>
+
+    <h3>Contact</h3>
+    <p>Email: your-email@example.com</p>
+  </section>
+
+  <!-- Terms -->
+  <section id="terms">
+    <h2>Terms & Conditions</h2>
+    <p><strong>Last Updated:</strong> June 8, 2026</p>
+
+    <h3>Acceptance of Terms</h3>
+    <p>By using Oasis VPN, you agree to these terms.</p>
+
+    <h3>Use of Service</h3>
+    <ul>
+      <li>Use only for legal purposes</li>
+      <li>No hacking, abuse, or illegal activity</li>
+      <li>No interference with servers</li>
+    </ul>
+
+    <h3>VPN Usage</h3>
+    <p>The VPN is user-activated and does not monitor or store browsing activity.</p>
+
+    <h3>Limitation of Liability</h3>
+    <p>We are not responsible for data loss, service interruptions, or misuse of the app.</p>
+
+    <h3>Termination</h3>
+    <p>We may suspend access if terms are violated.</p>
+
+    <h3>Contact</h3>
+    <p>Email: your-email@example.com</p>
+  </section>
+
+</div>
+
+<footer>
+  © 2026 Oasis VPN. All rights reserved.
+</footer>
+
+<script>
+  function showSection(id) {
+    document.querySelectorAll("section").forEach(sec => {
+      sec.classList.remove("active");
+    });
+    document.getElementById(id).classList.add("active");
+  }
+</script>
+
+</body>
+</html>
